@@ -5,7 +5,7 @@
 
 int main(int argc, char *argv[]) {
 int esc;
-printf("Escolha qual quest„o deseja ver a resposta:",setlocale(LC_ALL,""));
+printf("Escolha qual quest√£o deseja ver a resposta:",setlocale(LC_ALL,""));
 scanf("%i", &esc);
 do {
 	switch (esc) {
@@ -15,55 +15,55 @@ do {
 		float real = 18.94;
 		char charactere = 'c';
 		
-		printf("-- Quest„o 1: \nVari·vel do tipo inteiro: %i \nVari·vel do tipo real: %c \nVari·vel do tipo caractere: %f \n", inteiro, charactere,  real, setlocale(LC_ALL,""));
+		printf("-- Quest√£o 1: \nVari√°vel do tipo inteiro: %i \nVari√°vel do tipo real: %c \nVari√°vel do tipo caractere: %f \n", inteiro, charactere,  real, setlocale(LC_ALL,""));
 		
-		printf("\nModifique o valor da vari·vel do tipo inteiro: \n", setlocale(LC_ALL,""));
+		printf("\nModifique o valor da vari√°vel do tipo inteiro: \n", setlocale(LC_ALL,""));
 		scanf("%i", &inteiro);
 		
-		printf("\nModifique o valor da vari·vel do tipo caractere: \n", setlocale(LC_ALL,""));
+		printf("\nModifique o valor da vari√°vel do tipo caractere: \n", setlocale(LC_ALL,""));
 		scanf(" %c", &charactere);
 		
-		printf("\nModifique o valor da vari·vel do tipo real: \n", setlocale(LC_ALL,""));
+		printf("\nModifique o valor da vari√°vel do tipo real: \n", setlocale(LC_ALL,""));
 		scanf("%f", &real);
 		
-		printf("Vari·vel do tipo inteiro: %i \n", inteiro, setlocale(LC_ALL,""));
-		printf("Vari·vel do tipo real: %f \n", real, setlocale(LC_ALL,""));
-		printf("Vari·vel do tipo caractere: %c \n", charactere, setlocale(LC_ALL,""));
+		printf("Vari√°vel do tipo inteiro: %i \n", inteiro, setlocale(LC_ALL,""));
+		printf("Vari√°vel do tipo real: %f \n", real, setlocale(LC_ALL,""));
+		printf("Vari√°vel do tipo caractere: %c \n", charactere, setlocale(LC_ALL,""));
 	}break;
 	
 	case 2:
 	{	//EXC 2
 		int v1, v2;
-		printf("-- Quest„o 2 \nEscreva as duas v·riaveis:\n", setlocale(LC_ALL,""));
+		printf("-- Quest√£o 2 \nEscreva as duas v√°riaveis:\n", setlocale(LC_ALL,""));
 		scanf("%i \n",&v1);
 		scanf("%i",&v2);
-		printf("Valor escrito da primeira vari·vel: %i \nValor da segunda vari·vel: %i \n", v1, v2,setlocale(LC_ALL,""));
-		printf("EndereÁo na memÛria da primeira vari·vel: %p \nEndereÁo na memÛria da segunda vari·vel: %p", &v1, &v2,setlocale(LC_ALL,""));
+		printf("Valor escrito da primeira vari√°vel: %i \nValor da segunda vari√°vel: %i \n", v1, v2,setlocale(LC_ALL,""));
+		printf("Endere√ßo na mem√≥ria da primeira vari√°vel: %p \nEndere√ßo na mem√≥ria da segunda vari√°vel: %p", &v1, &v2,setlocale(LC_ALL,""));
 	}break;
 	
 	case 3:
 	{	//EXC3
 		;int inteiro3;
 		float num, frac;
-		printf("-- Quest„o 3 \n",setlocale(LC_ALL,""));
+		printf("-- Quest√£o 3 \n",setlocale(LC_ALL,""));
 		void sep(float num, int *inteiro3, float *frac)
 		{
 			*inteiro3 = (int) num;
 			*frac = num - *inteiro3;
 		};
-		printf("Digite um n˙mero real:\n", setlocale(LC_ALL,""));
+		printf("Digite um n√∫mero real:\n", setlocale(LC_ALL,""));
 		scanf("%f", &num);
-		//Chamando a funÁ„o
+		//Chamando a fun√ß√£o
 		sep(num, &inteiro3, &frac);
 		printf("Parte inteira: %i\n", inteiro3);
-	  	printf("Parte fracion·ria: %f\n", frac);
+	  	printf("Parte fracion√°ria: %f\n", frac);
 	}break;
 		
 	case 4: 
 	{	//EXC 4
-		printf("-- Quest„o 4 \n",setlocale(LC_ALL,""));
+		printf("-- Quest√£o 4 \n",setlocale(LC_ALL,""));
 		int unsigned i, qnt, tamanho;
-		printf("\nEscreva a quantidade de n˙meros no Array: ", setlocale(LC_ALL,""));
+		printf("\nEscreva a quantidade de n√∫meros no Array: ", setlocale(LC_ALL,""));
 		scanf("%i", &tamanho);
 		float vet[tamanho];
 		printf("Escreva os valores reais em cada array: \n", setlocale(LC_ALL,""));
@@ -92,10 +92,10 @@ do {
 	
 	case 5:
 	{	//EXC 5
-		printf("-- Quest„o 5 \n",setlocale(LC_ALL,""));
+		printf("-- Quest√£o 5 \n",setlocale(LC_ALL,""));
 		int *min, *max;
 		int unsigned i, tamanho;
-		printf("\nEscreva a quantidade de n˙meros no Array: ", setlocale(LC_ALL,""));
+		printf("\nEscreva a quantidade de n√∫meros no Array: ", setlocale(LC_ALL,""));
 		scanf("%i", &tamanho);
 		int vet[tamanho];
 		printf("Escreva os valores inteiros em cada array: \n", setlocale(LC_ALL,""));
@@ -124,16 +124,16 @@ do {
 	    	}
 		}
 		minmax(vet,N, &min, &max);
-		printf("\nValor mÌnimo: %i", min, setlocale(LC_ALL,""));
-		printf("\nValor m·ximo: %i", max, setlocale(LC_ALL,""));
+		printf("\nValor m√≠nimo: %i", min, setlocale(LC_ALL,""));
+		printf("\nValor m√°ximo: %i", max, setlocale(LC_ALL,""));
 	}break;
 	
 	case 6:
 	{	//EXC 6
-		printf("-- Quest„o 6 \n",setlocale(LC_ALL,""));
+		printf("-- Quest√£o 6 \n",setlocale(LC_ALL,""));
 		int max, rep;
 		int unsigned i, qnt, tamanho;
-		printf("\nEscreva a quantidade de n˙meros no Array: ", setlocale(LC_ALL,""));
+		printf("\nEscreva a quantidade de n√∫meros no Array: ", setlocale(LC_ALL,""));
 		scanf("%i", &tamanho);
 		int vet[tamanho];
 		printf("Escreva os valores inteiros em cada array: \n", setlocale(LC_ALL,""));
@@ -159,14 +159,14 @@ do {
 					rep++;
 				}
 			}
-			printf("\nMaior valor: %i \nN˙mero de repetiÁıes: %i", *max, rep);
+			printf("\nMaior valor: %i \nN√∫mero de repeti√ß√µes: %i", *max, rep);
 		}
 		qst6(vet, N, &max, rep);
 	}break;
 	
 	case 7:
 	{	//EXC 7
-		printf("-- Quest„o 7 \n",setlocale(LC_ALL,""));
+		printf("-- Quest√£o 7 \n",setlocale(LC_ALL,""));
 		char txt1[100], txt2[100];
 		printf("Digite a primeira string: ");
 	    scanf("%s", txt1);
@@ -198,13 +198,13 @@ do {
 			printf("A segunda string ocorre dentro da primeira.\n");
 	    }else
 		{
-	        printf("A segunda string n„o ocorre dentro da primeira.\n");
+	        printf("A segunda string n√£o ocorre dentro da primeira.\n");
 	    }
 	}break;
 	
 	case 8:
 	{	//EXC 8
-	 	printf("-- Quest„o 8 \n",setlocale(LC_ALL,""));
+	 	printf("-- Quest√£o 8 \n",setlocale(LC_ALL,""));
 		int *v,i;
 		v = malloc (5 * sizeof (int));
 		printf("Escreva os valores inteiros em cada array: \n", setlocale(LC_ALL,""));
@@ -222,21 +222,21 @@ do {
 
 	case 9:
 	{	// EXC 9
-		printf("-- Quest„o 9 \nCom suas palavras, descreva o que È um ponteiro em C.\n",setlocale(LC_ALL,""));
-		printf("Um ponteiro na linguagem C se trata de uma vari·vel na qual aponta para o endereÁo do tipo do qual foi especificado para ela.\nPortanto, conseguimos puxar o endereÁo e v·riavel para qual ela aponta assim como modificar os mesmos.");
+		printf("-- Quest√£o 9 \nCom suas palavras, descreva o que √© um ponteiro em C.\n",setlocale(LC_ALL,""));
+		printf("Um ponteiro na linguagem C se trata de uma vari√°vel na qual aponta para o endere√ßo do tipo do qual foi especificado para ela.\nPortanto, conseguimos puxar o endere√ßo e v√°riavel para qual ela aponta assim como modificar os mesmos.");
 	}break;
 	
 	case 10:
 	{	//EXC 10
-		printf("-- Quest„o 10\n",setlocale(LC_ALL,""));
-		//Podemos criar um novo tipo para criar uma estrutura de dado baseada nos tipos prim·rios
+		printf("-- Quest√£o 10\n",setlocale(LC_ALL,""));
+		//Podemos criar um novo tipo para criar uma estrutura de dado baseada nos tipos prim√°rios
 		typedef struct {
 		    char nome[100];
 		    char email[100];
 		    char telefone[15];
 		    char nascimento[11];
 		} aluno;
-		//A melhor forma de alocar a memÛria nas informaÁıes È criando e redirecionando um ponteiro.
+		//A melhor forma de alocar a mem√≥ria nas informa√ß√µes √© criando e redirecionando um ponteiro.
 		aluno *ponteiro;
 		ponteiro = malloc(sizeof(aluno));
 		//Podemos acessar a a parte especfica da estrutura evidenciando ela 
@@ -248,18 +248,18 @@ do {
 	    scanf("%s", &ponteiro->telefone);
 	    printf("Digite a data de nascimento do aluno (dd/mm/aaaa): ");
 	    scanf("%s", &ponteiro->nascimento);
-	    //Podemos mostrar as partes especÌficas da mesma forma
+	    //Podemos mostrar as partes espec√≠ficas da mesma forma
 	    printf("\nDados do aluno:\n");
 	    printf("Nome: %s\n", ponteiro->nome);
 	    printf("Email: %s\n", ponteiro->email);
 	    printf("Telefone: %s\n", ponteiro->telefone);
 	    printf("Data de Nascimento: %s\n", ponteiro->nascimento);
-	    //Para excluir o dado da memÛria
+	    //Para excluir o dado da mem√≥ria
 		free(ponteiro);	    
 	}break;
 	default: return(0);
 	}; 
-	printf("\nDeseja ver outra quest„o?");
+	printf("\nDeseja ver outra quest√£o?");
 	scanf("%i", &esc);
 }while (esc < 11);
 	return EXIT_SUCCESS;
